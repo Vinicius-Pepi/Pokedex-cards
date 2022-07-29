@@ -1,0 +1,249 @@
+/* Estilizando o conteúdo do body */
+body{
+    /* Aplicando a fonte importada e uma fonte reserva */
+    font-family: 'Outfit', sans-serif;
+
+    /* Colocando plano de fundo (usamos .. para voltar uma pasta no src) */
+    background-image: url(../imagens/fundo-site.png);
+
+    /* Impedindo o background de repetir */
+    background-repeat: no-repeat;
+
+    /* Fazendo com que o background ocupe a página */
+    background-size: cover;
+
+    min-height: 100vh;
+}
+
+
+
+/* Estilizando classe do Header */
+.cabecalho{
+    /* Deixando elementos do header um ao lado do outro */
+    display: flex;
+
+    /* Alinhando os elementos */
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    /* "Descolando o conteúdo do topo" */
+    padding-top: 50px;
+}
+
+
+
+/* Estilizando a classe titulo dentro do cabecalho */
+.cabecalho .titulo{
+    /* Trocando a cor do titulo (h1) dentro do cabecalho (header) */
+    color: #f1ecff;
+}
+
+
+
+/* Estilizando a pokebola (imagem) dentro do cabecalho (header) */
+.cabecalho .pokebola{
+    /* Arrumando o tamanho da imagem da pokebola */
+    width: 25px;
+    height: 25px;
+}
+
+
+
+/* Estilizando classe do main (conteudo principal) */
+.pokemon-slider{
+    /* Alinhando e centralizando itens do conteudo principal */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* espaçar as setas */
+    gap: 80px;
+
+    /* Definindo a distância da borda (cima e baixo) do conteúdo principal */
+    margin: 60px 0;
+}
+
+
+
+/* Estilizando classe lista de pokemons (ul) */
+.lista-pokemons{
+    /* Limitando a largura e altura da lista */
+    width: 310px;
+    height: 520px;
+
+    /* Deixando as cartar uma abaixo da outra (em conjunto com (position: absolute;) em .cartao */
+    position: relative;
+}
+
+
+
+/* Estilizando os botões de avançar e voltar */
+.btn-seta{
+    background-color: white;
+
+    /* Definindo altura e largura da seta */
+    width: 70px;
+    height: 70px;
+
+    /* Arredondando os botões e tirando as bordas*/
+    border-radius: 50px;
+    border: 0;
+
+    /* Definindo o cursor "mãozinha" quando passar em cima do botão */
+    cursor: pointer;
+
+    /* Adicionando animação para transição de cor (hover) */
+    transition: background-color 0.2s ease-in-out;
+
+    /* Adicionando sombra ao botão (utilizado site getcssscan.com) */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+
+/* Estilizando o botão de voltar (adicionamos duas classes ao botão voltar para estilizarmos somente ele no css */
+.btn-seta.btn-voltar{
+    /* Rotacionando o botão voltar */
+    transform: rotateY(180deg);
+
+}
+
+
+
+/* Adicionando efeito quando passamos o mouse em cima do botão */
+.btn-seta:hover{
+    background-color: #8351fe;
+    
+}
+
+
+
+/* Estilizando o cartao (li) */
+.cartao{
+    background-color: violet;
+    opacity: 1;
+
+    /* Definindo o cartão para ocupar a altura inteira da lista (ul) */
+    height: 100%;
+
+    /* Ajustando a disposição dos itens dentro da carta */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* Deixando as cartar uma abaixo da outra (em conjunto com (position: relative;) em .lista-pokemon */
+    position: absolute;
+
+    /* Espaçando margem interna aos elementos dentro da carta */
+    padding: 12px;
+
+    /* Adicionando borda a carta */
+    border-radius: 10px;
+
+    /* Adicionando sombra abaixo da carta */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    /* Transição de opacidade quando trocar de carta */
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+
+/* Estilizando cartao (li) quando selecionado*/
+.cartao.selecionado{
+    /* Definindo quando o cartão estiver selecionado, aumentar a opacidade dele */
+    opacity: 1;
+
+    /* Esta função faz o item ser movido a frente de todos os outros elementos (como se fosse um baralho de carta) */
+    z-index: 1;
+}
+
+
+
+/* Estilizando o fundo da primeira carta (pikachu) */
+.fundo-1{
+    background: url(../imagens/fundo-card-1.jpg);
+    background-repeat: no-repeat;
+}
+
+
+
+/* Estilizando o fundo da primeira carta (charizard) */
+.fundo-2{
+    background: url(../imagens/fundo-card-2.jpg);
+    background-repeat: no-repeat;
+}
+
+
+
+/* Estilizando o fundo da primeira carta (mewtwo) */
+.fundo-3{
+    background: url(../imagens/fundo-card-3.jpg);
+    background-repeat: no-repeat;
+}
+
+
+
+/* Estilizando a div informacoes dentro de .cartao */
+.cartao .informacoes{
+    /* Adicionando cor de fundo na div */
+    background-color: rgba(179, 177, 182, 0.7);
+
+    /* Definindo espaçamento interno no texto */
+    padding: 8px 10px;
+
+    /* Adicionando arredondamento ao canto superior */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    /* Ajustando alinhamento do texto dentro da div */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+/* Estilizando o nome do pokemon dentro do cartão */
+.cartao .informacoes .nome{
+    /* Cor da fonte */
+    color: #f1ecff;
+
+    /* tamanho da fonte */
+    font-size: 22px;
+}
+
+
+
+/* Estilizando a vida do pokemon dentro do cartão */
+.cartao .informacoes .vida{
+    /* Cor de fundo do texto */
+    background-color: #333;
+
+    /* Cor do texto */
+    color: #f1ecff;
+
+    /* Borda interna e arredondamento do fundo */
+    padding: 6px 10px;
+    border-radius: 20px;
+}
+
+
+
+/* Estilo para ajudar a centralizar qualquer imagem na carta */
+.cartao .container-imagem{
+    text-align: center;
+}
+
+
+/* Estilizando a imagem do pokemon dentro do cartão */
+.cartao .imagem-pokemon{
+    /* Indicamos que a imagem deve ocupar 100% da imagem */
+    max-width: 100%;
+    max-height: 100%;
+
+    /* Espaçamento interno */
+    padding: 20px;
+}
+
