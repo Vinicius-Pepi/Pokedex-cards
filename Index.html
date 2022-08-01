@@ -16,6 +16,9 @@
     <!-- Link para estilo CSS -->
     <link rel="stylesheet" href="src/css/style.css">
 
+    <!-- Link para responsivo css -->
+    <link rel="stylesheet" href="src/css/responsivo.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
@@ -29,7 +32,7 @@
     <main class="pokemon-slider">
         <!--Botão voltar-->
         <button class="btn-seta btn-voltar">
-            <img src="src/imagens/seta.png" alt="seta voltar">
+            <img src="src/imagens/seta.png" alt="seta voltar" id="btn-voltar">
         </button>
 
         <!--Pokémons-->  
@@ -45,53 +48,54 @@
                     <img class="imagem-pokemon" src="src/imagens/pikachu.png" alt="">
                 </div>
 
-                <div>
-                    <h3>Descrição</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui aliquam voluptate laboriosam doloribus reiciendis blanditiis quos ut earum. Nisi eius deserunt nostrum, numquam molestias dolores necessitatibus assumenda id quod ipsum!</p>
+                <div class="descricao">
+                    <h3 class="titulo">Descrição</h3>
+                    <p class="texto">Pikachu é um tipo de Pokémon elétrico: os bolsos em suas bochechas, identificado por discos vermelhos que decoram, são capazes de gerar choques elétricos de intensidade variável, chegando até o nível de poder de um raio. Eles também o usam para se defender.</p>
                 </div>              
             </li>
 
             <!--Charizard-->
             <li class="cartao fundo-2">
-                <div>
-                    <h2>Charizard</h2>
-                    <p>HP 800</p>
+                <div class="informacoes">
+                    <h2 class="nome">Charizard</h2>
+                    <p class="vida">HP 800</p>
                 </div>
 
-                <div>
-                    <img src="src/imagens/charizard.png" alt="">
+                <div class="container-imagem">
+                    <img class="imagem-pokemon" src="src/imagens/charizard.png" alt="">
                 </div>
 
-                <div>
-                    <h3>Descrição</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui aliquam voluptate laboriosam doloribus reiciendis blanditiis quos ut earum. Nisi eius deserunt nostrum, numquam molestias dolores necessitatibus assumenda id quod ipsum!</p>
+                <div class="descricao">
+                    <h3 class="titulo">Descrição</h3>
+                    <p class="texto">Geralmente, um Charizard é competitivo.Ele adora a batalha e gasta uma grande quantidade de tempo de formação ou olhando adversários.Seu espírito competitivo também é notável, uma vez que nunca vai cuspir fogo em um inimigo mais fraco a menos que provocado ou ordenado. Quando fica muito irritado, as chamas em sua cauda se tornar uma cor branco-azulada. Ele cospe fogo que é quente o suficiente para derreter rochas. é conhecido também por incendios floestais causados por sua fúria.</p>
                 </div>       
             </li>
 
             <!--Mewtwo-->
-            <li class="cartao fundo-3">
-                <div>
-                    <h2>Mewtwo</h2>
-                    <p>HP 1200</p>
+            <li class="cartao  fundo-3">
+                <div class="informacoes">
+                    <h2 class="nome">Mewtwo</h2>
+                    <p class="vida">HP 300</p>
                 </div>
 
-                <div>
-                    <img src="src/imagens/mewtwo.png" alt="">
+                <div class="container-imagem">
+                    <img class="imagem-pokemon" src="src/imagens/mewtwo.png" alt="">
                 </div>
 
-                <div>
-                    <h3>Descrição</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui aliquam voluptate laboriosam doloribus reiciendis blanditiis quos ut earum. Nisi eius deserunt nostrum, numquam molestias dolores necessitatibus assumenda id quod ipsum!</p>
-                </div>       
-            </li> -->
+                <div class="descricao">
+                    <h3 class="titulo">Descrição</h3>
+                    <p class="texto">Mewtwo o pokémon genético, o pokémon que foi clonado geneticamente do Mew.</p>
+                </div>              
+            </li>
         </ul>
 
         <!--Botão avançar-->
-        <button class="btn-seta">
+        <button class="btn-seta" id="btn-avancar">
             <img src="src/imagens/seta.png" alt="seta avançar">
         </button>
     </main>
 
+    <script src="src/js/index.js"></script>
 </body>
 
 </html>

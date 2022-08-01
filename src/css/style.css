@@ -247,3 +247,45 @@ body{
     padding: 20px;
 }
 
+
+.cartao .descricao{
+    /* Trocando o fundo do texto de descrição */
+    background-color: rgb(255, 255, 255, 0.8);
+
+    /* Arredondando as pontas de baixo do fundo da descrição */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.cartao .descricao .titulo{
+    /* Definindo a cor de fundo do título da descricão */
+    background-color: #333;
+
+    /* Definindo cor do texto do título da descrição */
+    color: #f1ecff;
+
+    /* Definindo tamanho do texto do título da descrição */
+    font-size: 15px;
+
+    /* Definindo margem interno do título da descrição */
+    padding: 12px;
+}
+
+.cartao .descricao .texto{
+    /* Definindo tamanho do texto da descrição */
+    font-size: 14px;
+
+    /* Definindo margem interna do texto da descrição */
+    padding: 12px;
+
+    /* Definindo o alinhamento do texto da descrição */
+    text-align: justify;
+
+    /* Definindo tamanho máximo da div texto da descrição */
+    max-height: 115px;
+
+    /* Impedindo que o tamanho do texto saia do tamanho da carta */
+    overflow-y: auto;
+}
+
+
