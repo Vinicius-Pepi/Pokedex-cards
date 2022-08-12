@@ -1,9 +1,9 @@
 # Pokedex-cards
 
 ## Página dedicada a Pokémon Trading Card Game.
-Consiste em um carrossel das cartas dos pokémons
+Consiste em um carrossel das TCG.
 
-###### Feito com CSS/JS
+###### Cartas e carrossel feitos em CSS/JS
 
 ![This is an image](https://i.ibb.co/19tFbT7/pokemon.png)
 
