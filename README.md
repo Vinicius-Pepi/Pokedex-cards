@@ -7,4 +7,4 @@ Feito com CSS/JS
 
 ![This is an image](https://i.ibb.co/19tFbT7/pokemon.png)
 
-> Projeto foi feito para praticar HTML/CSS/JS 
+> Projeto realizado para praticar HTML/CSS/JS 
